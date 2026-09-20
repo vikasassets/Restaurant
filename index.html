@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Eating Point | Multi-Cuisine Restaurant in Gomti Nagar, Lucknow</title>
+    <meta name="description" content="Grand Eating Point in Gomti Nagar, Lucknow serves North Indian, Mughlai, biryani, kebabs, Chinese, momos, chaat and more. Explore the menu and visit us.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css?v=2">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero">GRAND EATING POINT</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#hero" class="active">HOME</a>
+                <a href="#menu">MENU</a>
+                <a href="#about">ABOUT</a>
+                <a href="#specialties">SPECIALTIES</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#location">VISIT US</a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#menu" class="btn btn-primary">ORDER NOW</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#hero" class="mobile-link">HOME</a>
+            <a href="#menu" class="mobile-link">MENU</a>
+            <a href="#about" class="mobile-link">ABOUT</a>
+            <a href="#specialties" class="mobile-link">SPECIALTIES</a>
+            <a href="#gallery" class="mobile-link">GALLERY</a>
+            <a href="#location" class="mobile-link">VISIT US</a>
+            <a href="#menu" class="btn btn-primary mobile-order">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-small-text">WELCOME TO</span>
+            <h1 class="hero-title">GRAND EATING<br>POINT</h1>
+            <p class="hero-tagline">Authentic Flavours. Made for Every Occasion.</p>
+            <p class="hero-desc">"From rich North Indian classics and fragrant biryanis to kebabs, Chinese favourites and indulgent chaat, Grand Eating Point brings together flavours made for family meals, celebrations and everyday cravings."</p>
+            <p class="hero-location-text">GOMTI NAGAR &bull; LUCKNOW &bull; 4.8★ RATED ON GOOGLE</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">ORDER NOW</a>
+                <a href="#menu" class="btn btn-secondary">EXPLORE MENU</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="assets/hero_indian_feast.jpg" loading="eager" alt="Authentic Indian Cuisine" class="hero-image" id="hero-img">
+        </div>
+    </section>
+
+    <!-- CUISINE SECTION -->
+    <section class="craving-section" id="cuisine">
+        <div class="container">
+            <h2 class="section-title text-center">A TABLE FULL OF FLAVOURS</h2>
+            <p class="section-subtitle text-center">Discover our wide range of authentic cuisines.</p>
+            
+            <div class="craving-scroll-wrapper">
+                <div class="craving-cards" id="craving-cards">
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/paneer_butter_masala.jpg" alt="North Indian Cuisine at Grand Eating Point" loading="lazy"></div>
+                        <h3>NORTH INDIAN</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/chicken_tikka.jpg" alt="Mughlai Cuisine at Grand Eating Point" loading="lazy"></div>
+                        <h3>MUGHLAI</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/authentic_biryani.jpg" alt="Biryani at Grand Eating Point" loading="lazy"></div>
+                        <h3>BIRYANI</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/chicken_seekh_kebab.jpg" alt="Kebabs at Grand Eating Point" loading="lazy"></div>
+                        <h3>KEBABS</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/hakka_noodles.jpg" alt="Chinese Cuisine at Grand Eating Point" loading="lazy"></div>
+                        <h3>CHINESE</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/hakka_noodles.jpg" alt="Momos at Grand Eating Point" loading="lazy"></div>
+                        <h3>MOMOS</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/basket_chaat.jpg" alt="Chaat at Grand Eating Point" loading="lazy"></div>
+                        <h3>CHAAT</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/paneer_butter_masala.jpg" alt="Fast Food at Grand Eating Point" loading="lazy"></div>
+                        <h3>FAST FOOD</h3>
+                    </div>
+                    <div class="craving-card">
+                        <div class="card-img-wrapper"><img src="assets/beverages.jpg" alt="Beverages at Grand Eating Point" loading="lazy"></div>
+                        <h3>BEVERAGES</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE DISHES -->
+    <section class="signature-section" id="specialties">
+        <div class="container">
+            <h2 class="section-title">OUR MENU HIGHLIGHTS</h2>
+            <p class="section-subtitle">Featured favourites made with authentic recipes.</p>
+            
+            <div class="signature-grid">
+                <div class="sig-card">
+                    <img src="assets/paneer_butter_masala.jpg" alt="Paneer Butter Masala at Grand Eating Point" loading="lazy">
+                    <div class="sig-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Rich, creamy tomato gravy with soft paneer cubes.</p>
+                        <a href="#menu" class="sig-order">EXPLORE MENU &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="sig-card">
+                    <img src="assets/chicken_seekh_kebab.jpg" alt="Chicken Seekh Kebab at Grand Eating Point" loading="lazy">
+                    <div class="sig-content">
+                        <h3>Chicken Seekh Kebab</h3>
+                        <p>Spiced minced chicken cooked to perfection in a tandoor.</p>
+                        <a href="#menu" class="sig-order">EXPLORE MENU &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="sig-card">
+                    <img src="assets/basket_chaat.jpg" alt="Basket Chaat at Grand Eating Point" loading="lazy">
+                    <div class="sig-content">
+                        <h3>Basket Chaat</h3>
+                        <p>Crispy potato basket loaded with sweet curd, chutneys and spices.</p>
+                        <a href="#menu" class="sig-order">EXPLORE MENU &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="sig-card">
+                    <img src="assets/dal_makhani.jpg" alt="Dal Makhani at Grand Eating Point" loading="lazy">
+                    <div class="sig-content">
+                        <h3>Dal Makhani</h3>
+                        <p>Rich dark lentil gravy topped with a swirl of fresh cream and a dollop of butter.</p>
+                        <a href="#menu" class="sig-order">EXPLORE MENU &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="sig-card">
+                    <img src="assets/authentic_biryani.jpg" alt="Veg Pulao at Grand Eating Point" loading="lazy">
+                    <div class="sig-content">
+                        <h3>Veg Pulao</h3>
+                        <p>Fragrant basmati rice cooked with fresh seasonal vegetables.</p>
+                        <a href="#menu" class="sig-order">EXPLORE MENU &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title text-center">THE MENU</h2>
+            <p class="section-subtitle text-center">Authentic flavours for everyone.</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="north-indian">NORTH INDIAN</button>
+                <button class="tab-btn" data-tab="tandoor">TANDOOR & KEBABS</button>
+                <button class="tab-btn" data-tab="chaat">CHAAT</button>
+                <button class="tab-btn" data-tab="biryani">BIRYANI & RICE</button>
+                <button class="tab-btn" data-tab="chinese">CHINESE</button>
+            </div>
+            
+            <div class="menu-content active" id="north-indian">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Paneer Butter Masala</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Shahi Paneer</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Dal Makhani</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Mutton Handi</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Chicken Tikka Masala</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-action text-center mt-4" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                    <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary">ORDER VIA ZOMATO</a>
+                    <a href="https://www.swiggy.com/" target="_blank" class="btn btn-primary">ORDER VIA SWIGGY</a>
+                    <a href="tel:+919956050299" class="btn btn-secondary">CALL TO ORDER</a>
+                </div>
+            </div>
+
+            <div class="menu-content" id="tandoor">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Chicken Seekh Kebab</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Chicken Afghani Dry</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Chicken Barra</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-action text-center mt-4" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                    <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary">ORDER VIA ZOMATO</a>
+                    <a href="https://www.swiggy.com/" target="_blank" class="btn btn-primary">ORDER VIA SWIGGY</a>
+                    <a href="tel:+919956050299" class="btn btn-secondary">CALL TO ORDER</a>
+                </div>
+            </div>
+            
+            <div class="menu-content" id="chaat">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Basket Chaat</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Aloo Tikki Chaat</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Pani Ke Batashe</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Dahi Batashe</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-action text-center mt-4" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                    <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary">ORDER VIA ZOMATO</a>
+                    <a href="https://www.swiggy.com/" target="_blank" class="btn btn-primary">ORDER VIA SWIGGY</a>
+                    <a href="tel:+919956050299" class="btn btn-secondary">CALL TO ORDER</a>
+                </div>
+            </div>
+
+            <div class="menu-content" id="biryani">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Veg Pulao</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Chicken Tikka Rice</h4>
+                        <p>Non-Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-action text-center mt-4" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                    <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary">ORDER VIA ZOMATO</a>
+                    <a href="https://www.swiggy.com/" target="_blank" class="btn btn-primary">ORDER VIA SWIGGY</a>
+                    <a href="tel:+919956050299" class="btn btn-secondary">CALL TO ORDER</a>
+                </div>
+            </div>
+
+            <div class="menu-content" id="chinese">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Paneer Chilli Dry</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Paneer Manchurian Dry</h4>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Veg/Chicken Hakka Noodles</h4>
+                        <p>Multi-Option</p>
+                    </div>
+                </div>
+                <div class="menu-action text-center mt-4" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                    <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary">ORDER VIA ZOMATO</a>
+                    <a href="https://www.swiggy.com/" target="_blank" class="btn btn-primary">ORDER VIA SWIGGY</a>
+                    <a href="tel:+919956050299" class="btn btn-secondary">CALL TO ORDER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -> ABOUT -->
+    <section class="story-section" id="about">
+        <div class="container story-container">
+            <div class="story-content">
+                <h2 class="section-title">Good Food. Great Company. Memorable Moments.</h2>
+                <p>"Grand Eating Point brings together comforting Indian flavours, satisfying multi-cuisine favourites and a welcoming dining experience in the heart of Gomti Nagar, Lucknow."</p>
+                <p class="story-highlight">"Made for Gatherings"</p>
+                <p>From family dinners to special celebrations, Grand Eating Point offers a welcoming setting for enjoying great food together.</p>
+            </div>
+            <div class="story-image">
+                <img src="assets/restaurant_ambience.jpg" alt="Grand Eating Point restaurant ambience in Gomti Nagar, Lucknow" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-grid">
+            <img src="assets/dining_closeup.jpg" alt="Elegant Dining Setup at Grand Eating Point" class="gal-img img-large" loading="lazy">
+            <img src="assets/authentic_biryani.jpg" alt="Authentic Biryani" class="gal-img" loading="lazy">
+            <img src="assets/restaurant_ambience.jpg" alt="Restaurant Ambience" class="gal-img img-tall" loading="lazy">
+            <img src="assets/chicken_tikka.jpg" alt="Chicken Tikka Highlights" class="gal-img" loading="lazy">
+            <img src="assets/basket_chaat.jpg" alt="Chaat Specials" class="gal-img" loading="lazy">
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location-section" id="location">
+        <div class="container location-container">
+            <div class="location-info">
+                <h2 class="section-title">VISIT GRAND EATING POINT</h2>
+                <p class="location-sub">"4.8★ Rated on Google"</p>
+                
+                <div class="address-box">
+                    <h4>ADDRESS</h4>
+                    <p>1/120, Viram Khand, Viram Khand 1,<br>Gomti Nagar, Lucknow,<br>Uttar Pradesh 226010, India</p>
+                    
+                    <h4 class="mt-4">OPENING HOURS</h4>
+                    <p>11:00 AM &ndash; 11:30 PM<br>Every Day</p>
+
+                    <h4 class="mt-4">PHONE</h4>
+                    <p><a href="tel:+919956050299" style="color: inherit; text-decoration: none;">+91 99560 50299</a></p>
+                </div>
+                
+                <div class="location-buttons">
+                    <a href="https://maps.app.goo.gl/3Q8t7Hj533q7xG7U8" target="_blank" class="btn btn-secondary">GET DIRECTIONS</a>
+                    <a href="tel:+919956050299" class="btn btn-primary">CALL RESTAURANT</a>
+                </div>
+            </div>
+            <div class="location-map-visual">
+                <div class="map-placeholder">
+                    <span>GRAND EATING POINT</span>
+                    <div class="pin"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="cta-bg">
+            <img src="assets/hero_indian_feast.jpg" alt="Grand Eating Point Spread" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="cta-content">
+            <h2 class="cta-title">HUNGRY YET?</h2>
+            <p class="cta-subtitle">"Your next craving is waiting."</p>
+            <div class="cta-buttons">
+                <a href="tel:+919956050299" class="btn btn-primary">CALL TO ORDER</a>
+                <a href="https://maps.app.goo.gl/3Q8t7Hj533q7xG7U8" target="_blank" class="btn btn-secondary">GET DIRECTIONS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>GRAND EATING POINT</h3>
+                <p>Multi-cuisine restaurant in Gomti Nagar, Lucknow.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>NAVIGATION</h4>
+                <a href="#hero">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#specialties">Specialties</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#location">Visit Us</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>LOCATION</h4>
+                <p>1/120, Viram Khand, Viram Khand 1,<br>Gomti Nagar, Lucknow,<br>Uttar Pradesh 226010</p>
+                <p class="mt-2">HOURS: 11:00 AM &ndash; 11:30 PM Daily</p>
+                <p>PHONE: +91 99560 50299</p>
+            </div>
+            
+            <div class="footer-social">
+                <h4>ACTIONS</h4>
+                <a href="#menu">Order Now</a>
+                <a href="tel:+919956050299">Call</a>
+                <a href="https://maps.app.goo.gl/3Q8t7Hj533q7xG7U8" target="_blank">Get Directions</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Grand Eating Point. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
